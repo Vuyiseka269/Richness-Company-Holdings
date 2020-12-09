@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2{
+    text-align: center;
+    color: rgb(44, 132, 187);
+}
+.welcome{
+    display: flexbox;
+    float: right;
+    color: rgb(2, 17, 17);
+
+}
+.text{
+    text-align: center;
+    font-size: 20px;
+}
+.nav-bar{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    bottom: 550px;
+
+}
+.nav-bar ul{
+    float: right;
+    margin-right: 20px;
+    
+
+}
+.nav-bar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+
+}
+.nav-bar ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a.active, a:hover{
+    background: seagreen;
+    transition: .5s;
+}
+.footer{
+    text-align: center;
+    background: rgb(165, 231, 231);
+    padding: 20px;
+}
+@media screen and (max-width: 500px) {
+    .nav-bar a {
+      float: left;
+      display: block;
+    }
+  .nav-bar ul li a{
+    font-size: 12px;
+    padding: 0;
+  }
+  }
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .nav-bar, .welcome, h1, h2, .text, .footer, img{
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .nav-bar, .welcome, .text, h1, h2, .footer, img {
+      width: 100%;
+    }
+  }
